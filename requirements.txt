@@ -1,0 +1,4 @@
+Django==3.2.16
+django-allauth==0.51.0
+django-environ==0.8.1
+django-sslserver==0.22
