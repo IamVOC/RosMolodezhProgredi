@@ -7,6 +7,8 @@ h1 {
     font-size: calc(7px + 2wv);
     line-height: 141%;
     width: 65%;
+    margin: 0;
+    margin-bottom: 12px;
 }
 
 .authBar-content-wrapper {
@@ -23,9 +25,15 @@ h1 {
     height: auto;
     flex-flow: column;
     justify-content: space-between;
+    user-select: none;
+}
+
+.authBar-desc-wrapper {
+    margin-bottom: 25px;
 }
 
 .authBar-desc {
+    margin: 0;
     color: #9C9999;
     width: 75%;
 }
@@ -36,15 +44,21 @@ input {
     border-bottom: 1px solid rgba(156, 153, 153, 0.7);
     width: 100%;
     font-size: 15px;
-    line-height: 15px;
+    line-height: 25px;
+    transition: .5s;
 }
 
 input::placeholder {
     opacity: 0.5;
+    user-select: none;
 }
 
 .authBar-input {
     margin: 15px 0;
+}
+input:focus {
+    border-bottom: 1px solid rgba(42, 42, 42, 0.7);
+    transition: .5s;
 }
 
 .authBar-login::before {
@@ -52,7 +66,6 @@ input::placeholder {
     display: block;
     color: #9C9999;
     font-size: 12px;
-    padding-bottom: 5px;
 }
 
 .authBar-password::before {
@@ -60,11 +73,11 @@ input::placeholder {
     display: block;
     color: #9C9999;
     font-size: 12px;
-    padding-bottom: 5px;
 }
 
 .authBar-enter {
     align-self: center;
+    user-select: none;
 }
 
 .authBar-enter {
@@ -78,7 +91,10 @@ input::placeholder {
 }
 
 .authBar-enter:hover {
-    transform: translate(0, 3px);
     transition: 0.25s;
-    background-color: #7455ad;;
+    background-color: #47d244;;
+}
+
+.authBar-enter-pressed {
+    transform: translate(1px, 4px);
 }
