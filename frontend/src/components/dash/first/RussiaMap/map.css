@@ -1,0 +1,18 @@
+.russia-map > * {
+    fill: #6845a9;
+    stroke: white;
+    stroke-width: 0.5px;
+    transition: .25s;
+    height: 500px;
+}
+
+.russia-map > *:hover {
+    fill: #47d244;
+    transition: .25s;
+}
+
+.russia-map-wrapper {
+    position: absolute;
+    transform: translate(20%) scale(0.75);
+
+}

@@ -1,0 +1,16 @@
+.regionName {
+    position: absolute;
+    max-width: 150px;
+    background: rgb(55, 80, 54);
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.visible {
+    display: block
+}
+
+.invis {
+    display: none;
+}
