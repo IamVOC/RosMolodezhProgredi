@@ -12,11 +12,12 @@ export default class RussiaMap extends React.Component {
         return (
             <div className="russia-map-wrapper">
                 <Russia 
-                updateRegion={this.props.updateRegion}
-                displayPopUp={this.props.displayPopUp}
-                hidePopUp={this.props.hidePopUp}
-                hoverRegion={this.props.hoverRegion}
-                updateMousePos={this.props.updateMousePos}/>
+                    updateRegion={this.props.updateRegion}
+                    displayPopUp={this.props.displayPopUp}
+                    hidePopUp={this.props.hidePopUp}
+                    hoverRegion={this.props.hoverRegion}
+                    updateMousePos={this.props.updateMousePos}
+                    selectedRegion={this.props.selectedRegion}/>
             </div>
         )
     }

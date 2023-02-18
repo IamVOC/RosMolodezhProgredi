@@ -42,12 +42,14 @@ export class RussiaSelector extends React.Component {
     render() {
         return(
             <>
+                <div>{this.state.selectedRegion}</div>
                 <RussiaMap
                     updateRegion={this.selectRegion}
                     displayPopUp={this.displayPopUp}
                     hidePopUp={this.hidePopUp}
                     hoverRegion={this.hoverRegion}
                     updateMousePos={this.updateMousePos}
+                    selectedRegion={this.state.selectedRegion}
                 />
                 <PopUp name={this.state.hoveredRegion} visible={this.state.popUpVisible} 
                     posX={this.state.mousePos[0]} 
