@@ -42,7 +42,7 @@ export class RussiaSelector extends React.Component {
     render() {
         return(
             <>
-                <div>{this.state.selectedRegion}</div>
+                <div style={{position: "absolute"}}>{this.state.selectedRegion}</div>
                 <RussiaMap
                     updateRegion={this.selectRegion}
                     displayPopUp={this.displayPopUp}

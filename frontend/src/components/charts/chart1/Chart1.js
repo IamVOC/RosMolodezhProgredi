@@ -43,23 +43,13 @@ export class Chart1 extends Component {
 
   render() {
     return (
-      <div className="app">
-        <div className="row">
-          <div className="charts-container">
-            <Chart className="chart"
-                options={this.state.options}
-                series={this.state.series}
-                type="bar"
-                width="500"
+      <div className="row">
+        <Chart className="chart"
+          options={this.state.options}
+          series={this.state.series}
+          type="bar"
+          width="350"
             />
-            <Chart className="chart"
-                options={this.state.options}
-                series={this.state.series}
-                type="line"
-                width="500"
-            />
-          </div>
-        </div>
       </div>
     );
   }
