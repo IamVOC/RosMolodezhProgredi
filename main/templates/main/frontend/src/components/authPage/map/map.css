@@ -1,0 +1,25 @@
+.map-wrapper {
+    width: 50%;
+    overflow: hidden;
+}
+
+svg > * {
+    stroke: white;
+    stroke-width: 1px;
+    fill: #6845a9;
+    transition: .5s;
+}
+
+svg > *:hover {
+    fill: #47d244;
+    transition: .5s;
+}
+
+[title="Омская область"],
+[title="Московская область"],
+[title="Нижегородская область"],
+[title="Москва"],
+[title="Ленинградская область"],
+[title="Самарская область"]  {
+    fill: #47d244;
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+h1 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(7px + 2wv);
+    line-height: 141%;
+    width: 65%;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.authBar-content-wrapper {
+    margin: auto;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.authBar-content {
+    display: flex;
+    height: auto;
+    flex-flow: column;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.authBar-desc-wrapper {
+    margin-bottom: 25px;
+}
+
+.authBar-desc {
+    margin: 0;
+    color: #9C9999;
+    width: 75%;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(156, 153, 153, 0.7);
+    width: 100%;
+    font-size: 15px;
+    line-height: 25px;
+    transition: .5s;
+}
+
+input::placeholder {
+    opacity: 0.5;
+    user-select: none;
+}
+
+.authBar-input {
+    margin: 15px 0;
+}
+input:focus {
+    border-bottom: 1px solid rgba(42, 42, 42, 0.7);
+    transition: .5s;
+}
+
+.authBar-login::before {
+    content: "Логин";
+    display: block;
+    color: #9C9999;
+    font-size: 12px;
+}
+
+.authBar-password::before {
+    content: "Пароль";
+    display: block;
+    color: #9C9999;
+    font-size: 12px;
+}
+
+.authBar-enter {
+    align-self: center;
+    border: none;
+    outline: none;
+}
+
+.authBar-enter-text {
+    user-select: none;
+}
+
+.authBar-enter {
+    color: white;
+    padding: 10px 45px;
+    border-radius: 25px;
+    margin: 15px 0;
+    background-color: #8C64D7;
+    cursor: pointer;
+    transition: 0.25s
+}
+
+.authBar-enter:hover, .authBar-enter:focus {
+    transition: 0.25s;
+    background-color: #47d244;;
+}
+
+
+.authBar-enter-pressed {
+    transform: translate(1px, 4px);
+}

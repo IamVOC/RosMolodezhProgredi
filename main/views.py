@@ -38,4 +38,7 @@ def raw_views(request):
         result = queryForCSVParse(json)
         return Response(data = result.to_numpy(), status = 200)
 
+def index(request):
+    return render(request, 'main/public/index.html')
+
 # Create your views here.
