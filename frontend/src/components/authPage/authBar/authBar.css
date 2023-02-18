@@ -77,6 +77,11 @@ input:focus {
 
 .authBar-enter {
     align-self: center;
+    border: none;
+    outline: none;
+}
+
+.authBar-enter-text {
     user-select: none;
 }
 
@@ -90,10 +95,11 @@ input:focus {
     transition: 0.25s
 }
 
-.authBar-enter:hover {
+.authBar-enter:hover, .authBar-enter:focus {
     transition: 0.25s;
     background-color: #47d244;;
 }
+
 
 .authBar-enter-pressed {
     transform: translate(1px, 4px);

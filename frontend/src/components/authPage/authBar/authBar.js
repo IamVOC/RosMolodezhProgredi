@@ -30,11 +30,11 @@ export class AuthBar extends React.Component {
                         placeholder="..."
                         />
                     </div>
-                    <div className={pressed ? "authBar-enter authBar-enter-pressed" : "authBar-enter"}
+                    <button className={pressed ? "authBar-enter authBar-enter-pressed" : "authBar-enter"}
                     onMouseDown={() => this.setState({enterPressed : true})}
                     onMouseUp={() => this.setState({enterPressed : false})}
                     onMouseLeave={() => this.setState({enterPressed : false})}
-                    >Войти</div>
+                    ><span className="authBar-enter-text">Войти</span></button>
                 </div>
             </div>
         )
