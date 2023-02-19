@@ -31,6 +31,22 @@ def case1_views(request):
         return Response(data = resultDict, status = 200)
 
 @api_view(['GET'])
+def case2_views(request):
+    
+    if request.method == 'GET':
+        json = {
+                "sheet": ["Pz1"],
+                "columns": ["Названия строк", "Численность молодежи"],
+                }
+        result = queryForCSVParse(json)
+        rf = result.to_numpy()
+        resultDict = dict()
+        for i in rf:
+            resultDict[i[0]] = i[1]
+        return Response(data = resultDict, status = 200)
+
+
+@api_view(['GET'])
 def raw_views(request):
 
     if request.method == 'GET':

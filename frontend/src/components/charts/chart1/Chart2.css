@@ -1,0 +1,15 @@
+.app {
+    background-color: rgb(45, 47, 60);
+}
+
+.chart {
+}
+
+.charts-container {
+    display: flex;
+    padding: 10px;
+}
+
+.apexcharts-canvas {
+    background-color: rgb(58, 61, 79);
+}

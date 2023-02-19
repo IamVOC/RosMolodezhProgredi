@@ -76,9 +76,14 @@ input:focus {
 }
 
 .authBar-enter {
-    align-self: center;
+    /* align-self: center; */
     border: none;
     outline: none;
+}
+
+.authBar-link {
+    align-self: center;
+    pointer-events: none;
 }
 
 .authBar-enter-text {
@@ -92,7 +97,8 @@ input:focus {
     margin: 15px 0;
     background-color: #8C64D7;
     cursor: pointer;
-    transition: 0.25s
+    transition: 0.25s;
+    pointer-events: all;
 }
 
 .authBar-enter:hover, .authBar-enter:focus {

@@ -3,23 +3,22 @@
     overflow: hidden;
 }
 
-svg > * {
+.authMap > * {
     stroke: white;
-    stroke-width: 1px;
+    stroke-width: 0.5px;
     fill: #6845a9;
     transition: .5s;
 }
 
-svg > *:hover {
+.authMap > *:hover {
     fill: #47d244;
     transition: .5s;
 }
 
 [title="Омская область"],
-[title="Московская область"],
 [title="Нижегородская область"],
 [title="Москва"],
-[title="Ленинградская область"],
+[title="Санкт-Петербург"],
 [title="Самарская область"]  {
     fill: #47d244;
 }

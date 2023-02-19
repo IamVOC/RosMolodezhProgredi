@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.shortcuts import render
 from django.urls import path
-from main.views import raw_views, case1_views, index
+from main.views import raw_views, case1_views, case2_views, index
 
 urlpatterns = [
     path('', index),
     path('api/v1/raw', raw_views),
-    path('api/v1/case/1', case1_views)
+    path('api/v1/case/1', case1_views),
+    path('api/v1/case/2', case2_views)
 ]
