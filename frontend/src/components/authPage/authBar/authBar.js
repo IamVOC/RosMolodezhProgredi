@@ -1,5 +1,6 @@
 import React from "react";
 import './authBar.css'
+import { Link } from "react-router-dom";
 
 
 export class AuthBar extends React.Component {
@@ -30,11 +31,11 @@ export class AuthBar extends React.Component {
                         placeholder="..."
                         />
                     </div>
-                    <button className={pressed ? "authBar-enter authBar-enter-pressed" : "authBar-enter"}
+                    <Link to="/dash"><button className={pressed ? "authBar-enter authBar-enter-pressed" : "authBar-enter"}
                     onMouseDown={() => this.setState({enterPressed : true})}
                     onMouseUp={() => this.setState({enterPressed : false})}
                     onMouseLeave={() => this.setState({enterPressed : false})}
-                    ><span className="authBar-enter-text">Войти</span></button>
+                    ><span className="authBar-enter-text">Войти</span></button></Link>
                 </div>
             </div>
         )

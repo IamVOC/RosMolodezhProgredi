@@ -12,7 +12,7 @@ export class RussiaSelector extends React.Component {
         this.hoverRegion = this.hoverRegion.bind(this)
         this.updateMousePos = this.updateMousePos.bind(this)
         this.state = {
-            selectedRegion : "Омская область",
+            selectedRegion : this.props.selectedFirst,
             popUpVisible : false,
             hoveredRegion : "",
             mousePos : [0,0]
