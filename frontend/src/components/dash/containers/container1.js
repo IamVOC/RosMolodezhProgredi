@@ -2,6 +2,7 @@ import React from "react";
 import { RussiaSelector } from "../first/RussiaSelector/RussiaSelector";
 import { Chart1 } from "../../charts/chart1/Chart1";
 import { Chart2 } from "../../charts/chart1/Chart2";
+import { Pie } from "../../charts/pie/pie";
 import './container1.css'
 
 export class DashContainer1 extends React.Component {
@@ -10,6 +11,7 @@ export class DashContainer1 extends React.Component {
             <div className="dash-container1">
                 <Chart1 />
                 <Chart2 />
+                <Pie />
             </div>
         )
     }

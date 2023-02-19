@@ -8,6 +8,7 @@ export class Chart1 extends Component {
 
     this.state = {
       options: {
+        colors: ['#6247AA', '#8B61D7', '#A06CD5'],
         chart: {
           id: "basic-bar",
           animations: {
@@ -25,7 +26,7 @@ export class Chart1 extends Component {
           FontFamily : {
             // fontFamily : 
           },
-          foreColor: '#ffffff',
+          foreColor: '#9C9999',
 
         },
         xaxis: {

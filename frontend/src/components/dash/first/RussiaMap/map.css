@@ -13,10 +13,17 @@
 
 .russia-map-wrapper {
     position: absolute;
-    transform: translate(36%, -12%) scale(0.65);
+    transform: translate(11%, -18.5%) scale(0.6);
+    background: white;
+    border-radius: 15px;
+    padding: 50px;
 
 }
 
 .selected {
     fill: #47d244;
+}
+
+#root {
+    background: #eeeeee
 }

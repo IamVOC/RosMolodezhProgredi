@@ -6,9 +6,11 @@ import { DashContainer1 } from "../dash/containers/container1";
 export default function DashPage() {
     return (
         <>
+        <div className="page-wrapper">
             <Header />
             <RussiaSelector selectedFirst=""/>
             <DashContainer1 />
+        </div>
         </>
     )
 }

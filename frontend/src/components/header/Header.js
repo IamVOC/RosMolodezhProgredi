@@ -10,7 +10,9 @@ export class Header extends React.Component {
         const {} = this.props
 
         return (
-            <header className="loaded">this is the header</header>
+        <div className="header-container">
+            <header className="loaded">Росмолодёжь Statistics</header>
+        </div>
         )
     }
 }

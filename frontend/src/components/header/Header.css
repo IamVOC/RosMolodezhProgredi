@@ -1,5 +1,25 @@
 .loaded {
-    background-color: rgb(12, 103, 155);
-    color: white;
-    padding: 15px 10px;
+    color: black;
+    /* padding: 15px 10px; */
+    max-width: 100px;
+    font-weight: 500;
 }
+
+.header-container {
+    background: rgb(255, 255, 255);
+    /* border: 6px solid white; */
+    border-radius: 15px;
+    min-height: 68px;
+    padding: 10px;
+    font-size: 17px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.page-wrapper {
+    width: 95%;
+    margin: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');

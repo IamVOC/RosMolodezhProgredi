@@ -2,8 +2,6 @@
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
-    background: rgb(45, 47, 60);
-    width: 25vw;
     min-width: 370px;
     height: 100vh;
     overflow: auto;
