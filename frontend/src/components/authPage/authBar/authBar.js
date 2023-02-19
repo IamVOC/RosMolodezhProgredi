@@ -31,7 +31,7 @@ export class AuthBar extends React.Component {
                         placeholder="..."
                         />
                     </div>
-                    <Link to="/dash"><button className={pressed ? "authBar-enter authBar-enter-pressed" : "authBar-enter"}
+                    <Link to="/dash" className="authBar-link"><button className={pressed ? "authBar-enter authBar-enter-pressed" : "authBar-enter"}
                     onMouseDown={() => this.setState({enterPressed : true})}
                     onMouseUp={() => this.setState({enterPressed : false})}
                     onMouseLeave={() => this.setState({enterPressed : false})}
